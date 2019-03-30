@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <% include ../helpers/head %>
+</head>
+
+<body>
+
+  <!-- the classes 'page-header' and 'btn btn-default' create bootstrap components.  -->
+  <!-- Check out more components here: http://getbootstrap.com/components/ -->
+  <div class="page-header">
+    <h1>Add a post</h1>
+  </div>
+
+  <button class="btn btn-default" type="button" id="login-button" onclick="toggleSignIn()">Log in</button>
+
+  <form action="/action_page.php">
+    Post Title:<br>
+    <input type="text" id="post-title"><br>
+    Post Body:<br>
+    <input type="text" id="post-body"><br><br>
+    <button class="btn btn-default" type="button" onclick="handleMessageFormSubmit()">
+      Save it
+    </button>
+  </form>
+
+  <div id="stream"></div>
+
+</body>
+
+</html>
